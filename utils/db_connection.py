@@ -37,7 +37,7 @@ def execute_sql_script(file_name):
                 get_time(f"{sql_statement.split("\n")[0]}")
                 connection.execute(text(sql_statement))             # Usa text() per evitare errori
             transaction.commit()                                    # Conferma le modifiche
-            get_time(f"{sql_statement.split("\n")[0]}eseguito con successo.")
+            get_time(f"Script eseguito con successo")
         except SQLAlchemyError as e:
             transaction.rollback()                                  # Annulla in caso di errore
             print(f"Errore durante l'esecuzione dello script: {e}")
