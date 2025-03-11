@@ -1,0 +1,5 @@
+# Ignora tutti i file con estensione .tsv
+*.csv
+
+# (Opzionale) Ignora tutti i file .tsv in una cartella specifica
+# /data/*.tsv
